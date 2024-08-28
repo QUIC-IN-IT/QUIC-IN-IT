@@ -48,6 +48,7 @@ f = args.output
 r_count = 0
 t_count = 0
 f_count = 0
+total_count = 0
 for ip in amp_map:
     one_shot_af = quic_map[ip]
     max_af = 0
@@ -76,6 +77,7 @@ for ip in amp_map:
     # if max_af > one_shot_af and max_af > 3:
     if max_af > 3 or one_shot_af > 3:
         flag = True
+        total_count += 1
         if max_af > one_shot_af:
             r_count += 1
         elif max_af < one_shot_af:
@@ -100,3 +102,4 @@ for ip in amp_map:
         f.write(f'\n')
 
 print(t_count, r_count, f_count)
+print(total_count)
