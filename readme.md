@@ -1,3 +1,7 @@
+# Naming
+
+The name "QUIC-IN-IT" is actually a pun. It means that we use Initial packets to perform our work (IN-IT for "Init"ial), and it can discover the deployments and amplification vulnerabilities, or to say to look whether there are some interestring things "in it" (deployment in an IP, or amplification in a deployment).
+
 # Setup
 
 `pip install -r requirements.txt`
